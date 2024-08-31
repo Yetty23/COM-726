@@ -7,3 +7,4 @@ tensorflow
 PIL 
 matplotlib.pyplot 
 seaborn 
+joblib
