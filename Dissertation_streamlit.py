@@ -9,13 +9,13 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load the trained models
-log_reg_model = joblib.load('C:/Users/potab/OneDrive - Solent University/COM 726 Dissertation/Logistic_Regression.joblib')
-rf_model = joblib.load('C:/Users/potab/OneDrive - Solent University/COM 726 Dissertation/Random_Forest.joblib')
-gb_model = joblib.load('C:/Users/potab/OneDrive - Solent University/COM 726 Dissertation/Gradient_Boosting.joblib')
-nn_model = tf.keras.models.load_model('C:/Users/potab/OneDrive - Solent University/COM 726 Dissertation/Neural_Network.h5')
+log_reg_model = joblib.load('C:/Users/potab/OneDrive - Solent University/COM 726 Dissertation/Dissertation 2024 folder/prediction-of-hospital-readmission-in-heart-failure-patients/COM-726/Logistic_Regression.joblib')
+rf_model = joblib.load('C:/Users/potab/OneDrive - Solent University/COM 726 Dissertation/Dissertation 2024 folder/prediction-of-hospital-readmission-in-heart-failure-patients/COM-726/Random_Forest.joblib')
+gb_model = joblib.load('C:/Users/potab/OneDrive - Solent University/COM 726 Dissertation/Dissertation 2024 folder/prediction-of-hospital-readmission-in-heart-failure-patients/COM-726/Gradient_Boosting.joblib')
+nn_model = tf.keras.models.load_model('C:/Users/potab/OneDrive - Solent University/COM 726 Dissertation/Dissertation 2024 folder/prediction-of-hospital-readmission-in-heart-failure-patients/COM-726/Neural_Network.h5')
 
 # Load the dataset to fit the scaler
-file_path = 'C:/Users/potab/OneDrive - Solent University/COM 726 Dissertation/heart_failure_clinical_records_dataset.csv'
+file_path = 'C:/Users/potab/OneDrive - Solent University/COM 726 Dissertation/Dissertation 2024 folder/prediction-of-hospital-readmission-in-heart-failure-patients/COM-726/heart_failure_clinical_records_dataset.csv'
 data = pd.read_csv(file_path)
 X = data.drop(columns=['DEATH_EVENT'])
 
