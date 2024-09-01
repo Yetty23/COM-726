@@ -1,21 +1,22 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import pickle
+#import pickle
 from sklearn.preprocessing import StandardScaler
 import tensorflow as tf
 from PIL import Image
 import matplotlib.pyplot as plt
 import seaborn as sns
+import joblib
 
-with open('C:/Users/potab/OneDrive - Solent University/COM 726 Dissertation/Dissertation 2024 folder/prediction-of-hospital-readmission-in-heart-failure-patients/COM-726/Logistic_Regression.joblib', 'rb') as file:
-    log_reg_model = pickle.load(file)
+#with open('C:/Users/potab/OneDrive - Solent University/COM 726 Dissertation/Dissertation 2024 folder/prediction-of-hospital-readmission-in-heart-failure-patients/COM-726/Logistic_Regression.joblib', 'rb') as file:
+    #log_reg_model = pickle.load(file)
 
-with open('C:/Users/potab/OneDrive - Solent University/COM 726 Dissertation/Dissertation 2024 folder/prediction-of-hospital-readmission-in-heart-failure-patients/COM-726/Random_Forest.joblib', 'rb') as file:
-    rf_model = pickle.load(file)
+#with open('C:/Users/potab/OneDrive - Solent University/COM 726 Dissertation/Dissertation 2024 folder/prediction-of-hospital-readmission-in-heart-failure-patients/COM-726/Random_Forest.joblib', 'rb') as file:
+    #rf_model = pickle.load(file)
 
-with open('C:/Users/potab/OneDrive - Solent University/COM 726 Dissertation/Dissertation 2024 folder/prediction-of-hospital-readmission-in-heart-failure-patients/COM-726/Gradient_Boosting.joblib', 'rb') as file:
-    gb_model = pickle.load(file)
+#with open('C:/Users/potab/OneDrive - Solent University/COM 726 Dissertation/Dissertation 2024 folder/prediction-of-hospital-readmission-in-heart-failure-patients/COM-726/Gradient_Boosting.joblib', 'rb') as file:
+    #gb_model = pickle.load(file)
 
 
 # Load the trained models
