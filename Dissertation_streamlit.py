@@ -8,10 +8,20 @@ from PIL import Image
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+with open('C:/Users/potab/OneDrive - Solent University/COM 726 Dissertation/Dissertation 2024 folder/prediction-of-hospital-readmission-in-heart-failure-patients/COM-726/Logistic_Regression.joblib', 'rb') as file:
+    log_reg_model = pickle.load(file)
+
+with open('C:/Users/potab/OneDrive - Solent University/COM 726 Dissertation/Dissertation 2024 folder/prediction-of-hospital-readmission-in-heart-failure-patients/COM-726/Random_Forest.joblib', 'rb') as file:
+    rf_model = pickle.load(file)
+
+with open('C:/Users/potab/OneDrive - Solent University/COM 726 Dissertation/Dissertation 2024 folder/prediction-of-hospital-readmission-in-heart-failure-patients/COM-726/Gradient_Boosting.joblib', 'rb') as file:
+    gb_model = pickle.load(file)
+
+
 # Load the trained models
-log_reg_model = joblib.load('C:/Users/potab/OneDrive - Solent University/COM 726 Dissertation/Dissertation 2024 folder/prediction-of-hospital-readmission-in-heart-failure-patients/COM-726/Logistic_Regression.joblib')
-rf_model = joblib.load('C:/Users/potab/OneDrive - Solent University/COM 726 Dissertation/Dissertation 2024 folder/prediction-of-hospital-readmission-in-heart-failure-patients/COM-726/Random_Forest.joblib')
-gb_model = joblib.load('C:/Users/potab/OneDrive - Solent University/COM 726 Dissertation/Dissertation 2024 folder/prediction-of-hospital-readmission-in-heart-failure-patients/COM-726/Gradient_Boosting.joblib')
+#log_reg_model = joblib.load('C:/Users/potab/OneDrive - Solent University/COM 726 Dissertation/Dissertation 2024 folder/prediction-of-hospital-readmission-in-heart-failure-patients/COM-726/Logistic_Regression.joblib')
+#rf_model = joblib.load('C:/Users/potab/OneDrive - Solent University/COM 726 Dissertation/Dissertation 2024 folder/prediction-of-hospital-readmission-in-heart-failure-patients/COM-726/Random_Forest.joblib')
+#gb_model = joblib.load('C:/Users/potab/OneDrive - Solent University/COM 726 Dissertation/Dissertation 2024 folder/prediction-of-hospital-readmission-in-heart-failure-patients/COM-726/Gradient_Boosting.joblib')
 nn_model = tf.keras.models.load_model('C:/Users/potab/OneDrive - Solent University/COM 726 Dissertation/Dissertation 2024 folder/prediction-of-hospital-readmission-in-heart-failure-patients/COM-726/Neural_Network.h5')
 
 # Load the dataset to fit the scaler
