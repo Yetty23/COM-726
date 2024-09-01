@@ -1,11 +1,10 @@
 streamlit
 numpy
 pandas
-scikit-learn
 pickle5  # 'pickle' is a built-in module, but some environments may need 'pickle5' for compatibility
 tensorflow
 Pillow
 matplotlib
 seaborn
 lifelines  # For Kaplan-Meier survival curve (used in the visualization)
-sklearn
+scikit-learn==1.2.2
