@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import joblib
+import pickle
 from sklearn.preprocessing import StandardScaler
 import tensorflow as tf
 from PIL import Image
