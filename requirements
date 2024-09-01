@@ -1,10 +1,10 @@
-streamlit 
-numpy 
+streamlit
+numpy
 pandas
-sklearn.preprocessing 
-StandardScaler
+scikit-learn
+pickle5  # 'pickle' is a built-in module, but some environments may need 'pickle5' for compatibility
 tensorflow
-PIL 
-matplotlib.pyplot 
-seaborn 
-pickle
+Pillow
+matplotlib
+seaborn
+lifelines  # For Kaplan-Meier survival curve (used in the visualization)
