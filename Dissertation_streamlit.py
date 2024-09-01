@@ -7,11 +7,10 @@ subprocess.check_call([sys.executable, "-m", "pip", "install", "--upgrade", "pip
 subprocess.check_call([sys.executable, "-m", "pip", "install", "scikit-learn"])
  
 # Now import scikit-learn
-from sklearn.preprocessing import StandardScalerimport streamlit as st
+from sklearn.preprocessing import StandardScaler
 import numpy as np
 import pandas as pd
 #import pickle
-from sklearn.preprocessing import StandardScaler
 import tensorflow as tf
 from PIL import Image
 import matplotlib.pyplot as plt
