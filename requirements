@@ -8,4 +8,4 @@ Pillow
 matplotlib
 seaborn
 lifelines  # For Kaplan-Meier survival curve (used in the visualization)
-
+sklearn
