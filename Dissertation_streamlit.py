@@ -1,4 +1,13 @@
-import streamlit as st
+
+import subprocess
+import sys
+ 
+# Force reinstall scikit-learn
+subprocess.check_call([sys.executable, "-m", "pip", "install", "--upgrade", "pip"])
+subprocess.check_call([sys.executable, "-m", "pip", "install", "scikit-learn"])
+ 
+# Now import scikit-learn
+from sklearn.preprocessing import StandardScalerimport streamlit as st
 import numpy as np
 import pandas as pd
 #import pickle
