@@ -1,10 +1,5 @@
+import streamlit as st
 
-import subprocess
-import sys
- 
-# Force reinstall scikit-learn
-subprocess.check_call([sys.executable, "-m", "pip", "install", "--upgrade", "pip"])
-subprocess.check_call([sys.executable, "-m", "pip", "install", "scikit-learn"])
  
 # Now import scikit-learn
 from sklearn.preprocessing import StandardScaler
